@@ -1,0 +1,62 @@
+$black: #333;
+$white: #fff;
+$beige: #fbf2cf;
+$darkGreen: #a1c298;
+$lightGreen: #c6ebc5;
+$red: #fa7070;
+
+body {
+  /* font-family: "Shippori Mincho", serif; */
+  font-family: "Yomogi", cursive;
+  background-color: $beige;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $black;
+}
+
+/*---------------------
+  レスポンシブ
+---------------------*/
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+@mixin sm {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: $md) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: $lg) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (max-width: $xl) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media screen and (max-width: $xxl) {
+    @content;
+  }
+}
