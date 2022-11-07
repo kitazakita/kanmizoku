@@ -110,7 +110,10 @@ body {
 .main-menu {
   transition: all 0.4s;
   opacity: 0;
+  pointer-events: none;
+
   &.active {
+    pointer-events: auto;
     opacity: 1;
     transition: all 0.4s;
     position: fixed;
@@ -142,5 +145,12 @@ body {
         color: $white;
       }
     }
+  }
+}
+
+section#main-visual {
+  .logo {
+    text-align: center;
+    margin-top: 2rem;
   }
 }
