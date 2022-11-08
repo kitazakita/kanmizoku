@@ -8,25 +8,29 @@ const Footer = () => {
           </div>
           <div className="corporate-table">
             <table>
-              <tr>
-                <th>甘味族</th>
-              </tr>
-              <tr>
-                <td>TEL</td>
-                <td>000-0000-0000</td>
-              </tr>
-              <tr>
-                <td>住所</td>
-                <td>〇〇県〇市〇町１１番地</td>
-              </tr>
-              <tr>
-                <td>営業時間</td>
-                <td>10:00~17:00</td>
-              </tr>
-              <tr>
-                <td>定休日</td>
-                <td>水曜日</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>甘味族</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TEL</td>
+                  <td>000-0000-0000</td>
+                </tr>
+                <tr>
+                  <td>住所</td>
+                  <td>〇〇県〇市〇町１１番地</td>
+                </tr>
+                <tr>
+                  <td>営業時間</td>
+                  <td>10:00~17:00</td>
+                </tr>
+                <tr>
+                  <td>定休日</td>
+                  <td>水曜日</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>

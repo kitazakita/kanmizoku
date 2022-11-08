@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Menubar from "../../components/Menubar";
+import Footer from "../../components/Footer";
 export default function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Home() {
       <Menubar />
       <MainVisual />
       <Items />
+      <Footer />
     </>
   );
 }
@@ -47,7 +49,64 @@ const Items = () => {
         詳細は店舗までお問い合わせ下さい。
       </p>
 
-      <div className="items-gallery"></div>
+      <div className="items-gallery">
+        <div className="card">
+          <div className="img">
+            <img src="./images/karukan.png" alt="" />
+          </div>
+          <p>かるかん</p>
+          <p>100円(税込)</p>
+        </div>
+        <div className="card">
+          <div className="img">
+            <img src="./images/monaka.png" alt="" />
+          </div>
+          <p>もなか</p>
+          <p>100円(税込)</p>
+        </div>
+        <div className="card">
+          <div className="img">
+            <img src="./images/kasutera.png" alt="" />
+          </div>
+          <p>カステラ</p>
+          <p>100円(税込)</p>
+        </div>
+        <div className="card">
+          <div className="img">
+            <img src="./images/kasutera-dorayaki.png" alt="" />
+          </div>
+          <p>カステラどらやき</p>
+          <p>100円(税込)</p>
+        </div>
+        <div className="card">
+          <div className="img">
+            <img src="./images/usagimoti.png" alt="" />
+          </div>
+          <p>うさぎもち</p>
+          <p>100円(税込)</p>
+        </div>
+        <div className="card">
+          <div className="img">
+            <img src="./images/moti.png" alt="" />
+          </div>
+          <p>もち</p>
+          <p>100円(税込)</p>
+        </div>
+        <div className="card">
+          <div className="img">
+            <img src="./images/kuri-youkan.png" alt="" />
+          </div>
+          <p>くりようかん</p>
+          <p>100円(税込)</p>
+        </div>
+        <div className="card">
+          <div className="img">
+            <img src="./images/kuri-dorayaki.png" alt="" />
+          </div>
+          <p>くりどらやき</p>
+          <p>100円(税込)</p>
+        </div>
+      </div>
     </section>
   );
 };
