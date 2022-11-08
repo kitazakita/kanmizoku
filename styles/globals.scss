@@ -24,10 +24,6 @@ p {
   width: 60%;
   margin: 0 auto;
 }
-//
-//
-//
-//
 .menu-bar {
   position: fixed;
   top: 2rem;
@@ -40,7 +36,7 @@ p {
   justify-content: space-between;
   align-items: flex-end;
   gap: 0.5rem;
-  padding-top: 0.2rem;
+  padding-top: 0.5rem;
   @include sm {
     top: auto;
     bottom: 1rem;
@@ -117,6 +113,10 @@ p {
     align-items: center;
     cursor: pointer;
     padding: 0.2rem 1rem;
+    &.not-visible {
+      display: none;
+    }
+
     .top-button {
       .top-box {
         margin: 0 auto -0.4rem auto;
@@ -132,7 +132,6 @@ p {
     }
   }
 }
-
 .main-menu {
   transition: all 0.4s;
   opacity: 0;
@@ -173,7 +172,6 @@ p {
     }
   }
 }
-
 .separator {
   width: 50px;
   height: 50px;
@@ -204,7 +202,44 @@ p {
     }
   }
 }
+footer {
+  .footer-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    @include md {
+      width: 80%;
+    }
+  }
+  background-color: $lightGreen;
 
+  .inner-container {
+    display: flex;
+    gap: 3rem;
+    padding: 6rem 0;
+    @include md {
+      flex-direction: column;
+    }
+
+    .logo {
+      text-align: center;
+    }
+    .corporate-table {
+      table {
+        font-family: "Shippori Mincho", serif;
+        border-spacing: 3rem 5px;
+        margin: 0 auto;
+        th {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+//
+//
+//
+//
+// ＜トップページ＞
 section#main-visual {
   .logo {
     text-align: center;
@@ -226,7 +261,6 @@ section#main-visual {
     }
   }
 }
-
 section#about {
   margin-top: 10rem;
   @include ribbon;
@@ -240,12 +274,11 @@ section#about {
     text-align: center;
   }
 }
-
-section#craftman {
+section.base-design-2colum {
   margin-top: 10rem;
   @include ribbon;
 
-  .craftman-inner {
+  .inner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -270,7 +303,6 @@ section#craftman {
     }
   }
 }
-
 section#cute-japanese-sweets {
   margin-top: 10rem;
   @include ribbon;
@@ -298,5 +330,57 @@ section#cute-japanese-sweets {
         width: 100%;
       }
     }
+  }
+}
+section#souvenir {
+  margin-top: 10rem;
+  @include ribbon;
+
+  p.description {
+    margin-top: 5rem;
+  }
+
+  .img-grid {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .img {
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+//
+//
+//＜サブぺージ＞
+section#items-main-visual {
+  .inner-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    position: relative;
+    z-index: -1;
+
+    .logo {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 18%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+section#items {
+  margin-top: 7rem;
+  @include ribbon;
+
+  p.description {
+    margin-top: 3rem;
   }
 }

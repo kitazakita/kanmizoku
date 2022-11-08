@@ -25,7 +25,11 @@ const Menubar = () => {
           <p>MENU</p>
         </div>
 
-        <div className="page-top-button">
+        <div
+          className={
+            mainMenuToggle ? "page-top-button not-visible" : "page-top-button"
+          }
+        >
           <Scroll to="scroll-top" smooth={true}>
             <div className="top-button">
               <div className="top-box">

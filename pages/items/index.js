@@ -16,16 +16,38 @@ export default function Home() {
       </Head>
       <Menubar />
       <MainVisual />
+      <Items />
     </>
   );
 }
 
 const MainVisual = () => {
   return (
-    <section id="main-visual">
-      <div className="logo">
-        <img src="./images/logo.png" alt="" />
+    <section id="items-main-visual">
+      <div className="inner-container">
+        <img src="./images/itemlist-main-img.png" alt="" />
+        <div className="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
       </div>
+    </section>
+  );
+};
+
+const Items = () => {
+  return (
+    <section id="items">
+      <div className="title">
+        <h1>商品一覧</h1>
+      </div>
+
+      <p className="description wrapper">
+        例年販売している和菓子メニューでございます。
+        こちらのメニュー以外にも期間限定のメニューもございます。
+        詳細は店舗までお問い合わせ下さい。
+      </p>
+
+      <div className="items-gallery"></div>
     </section>
   );
 };

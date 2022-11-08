@@ -15,6 +15,10 @@ $red: #fa7070;
       color: $red;
       display: inline-block;
       padding: 1rem 7rem;
+      @include sm {
+        max-width: 90%;
+        padding: 1rem;
+      }
 
       &::before {
         content: "";

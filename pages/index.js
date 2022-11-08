@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Menubar from "../components/Menubar";
 import SeparatorMaterial from "../components/SeparatorMaterial";
+import Footer from "../components/Footer";
+
 export default function Home() {
   return (
     <>
@@ -24,6 +26,13 @@ export default function Home() {
       <SeparatorMaterial />
       <CuteJapaneseSweets />
       <SeparatorMaterial />
+      <KuriYoukan />
+      <SeparatorMaterial />
+      <Souvenir />
+      <SeparatorMaterial />
+      <EatIn />
+      <SeparatorMaterial />
+      <Footer />
     </>
   );
 }
@@ -72,12 +81,12 @@ const About = () => {
 
 const Craftsman = () => {
   return (
-    <section id="craftman">
+    <section id="crafts-man" className="base-design-2colum">
       <div className="title">
         <h1>職人の手で一つ一つ</h1>
       </div>
 
-      <div className="craftman-inner wrapper">
+      <div className="inner-container wrapper">
         <p className="left-content">
           テキストが入ります。テキストが入ります。テキストが入ります。
           テキストが入ります。テキストが入ります。テキストが入ります。
@@ -116,6 +125,83 @@ const CuteJapaneseSweets = () => {
           テキストが入ります。テキストが入ります。テキストが入ります。
           テキストが入ります。テキストが入ります。テキストが入ります。
         </p>
+      </div>
+    </section>
+  );
+};
+
+const KuriYoukan = () => {
+  return (
+    <section id="kuri-youkan" className="base-design-2colum">
+      <div className="title">
+        <h1>職人の手で一つ一つ</h1>
+      </div>
+
+      <div className="inner-container wrapper">
+        <p className="left-content">
+          テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+        <div className="right-content">
+          <img src="./images/kuri-youkan.png" alt="" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Souvenir = () => {
+  return (
+    <section id="souvenir" className="wrapper">
+      <div className="title">
+        <h1>お土産にもピッタリ</h1>
+      </div>
+
+      <p className="description">
+        テキストが入ります。テキストが入ります。テキストが入ります。
+        テキストが入ります。テキストが入ります。テキストが入ります。
+        テキストが入ります。テキストが入ります。テキストが入ります。
+      </p>
+
+      <div className="img-grid">
+        <div className="img">
+          <img src="./images/kuri-dorayaki.png" alt="" />
+        </div>
+        <div className="img">
+          <img src="./images/kasutera-dorayaki.png" alt="" />
+        </div>
+        <div className="img">
+          <img src="./images/usagimoti.png" alt="" />
+        </div>
+        <div className="img">
+          <img src="./images/kasutera.png" alt="" />
+        </div>
+      </div>
+
+      <p className="description">
+        テキストが入ります。テキストが入ります。テキストが入ります。
+        テキストが入ります。テキストが入ります。テキストが入ります。
+        テキストが入ります。テキストが入ります。テキストが入ります。
+      </p>
+    </section>
+  );
+};
+
+const EatIn = () => {
+  return (
+    <section id="eat-in" className="base-design-2colum">
+      <div className="title">
+        <h1>店内でもお召し上がりいただけます</h1>
+      </div>
+
+      <div className="inner-container wrapper">
+        <p className="left-content">
+          テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+        <div className="right-content">
+          <img src="./images/shop.png" alt="" />
+        </div>
       </div>
     </section>
   );
