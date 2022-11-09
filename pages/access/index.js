@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Menubar from "../../components/Menubar";
+import Footer from "../../components/Footer";
 export default function Home() {
   return (
     <>
@@ -16,15 +17,59 @@ export default function Home() {
       </Head>
       <Menubar />
       <MainVisual />
+      <Access />
+      <Footer />
     </>
   );
 }
 
 const MainVisual = () => {
   return (
-    <section id="main-visual">
-      <div className="logo">
-        <img src="./images/logo.png" alt="" />
+    <section id="access-main-visual">
+      <div className="inner-container">
+        <img src="./images/access-main-img.png" alt="" />
+        <div className="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Access = () => {
+  return (
+    <section id="access">
+      <div className="title">
+        <h1>アクセス</h1>
+      </div>
+
+      <div className="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53370.51402280487!2d131.3585672!3d33.27546759999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546ac2f5f729f87%3A0xfe31fae0fb807bd5!2z44CSODc5LTUxMDIg5aSn5YiG55yM55Sx5biD5biC5rmv5biD6Zmi55S65bed5LiK!5e0!3m2!1sja!2sjp!4v1667968881179!5m2!1sja!2sjp"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div className="access-car">
+        <p>お車でお越しの方</p>
+        <p>〇〇インター出口より、３ｋｍ。</p>
+      </div>
+      <div className="access-train">
+        <p>電車でお越しの方</p>
+        <p>〇〇駅より、徒歩５分。</p>
+      </div>
+
+      <div className="access-town-image">
+        <p>
+          テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+
+        <div className="town-image">
+          <img src="./images/access-img.png" alt="" />
+        </div>
       </div>
     </section>
   );

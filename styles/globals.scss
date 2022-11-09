@@ -22,6 +22,7 @@ p {
 }
 .wrapper {
   width: 60%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .menu-bar {
@@ -231,6 +232,15 @@ footer {
         th {
           text-align: start;
         }
+
+        @include sm {
+          td {
+            display: block;
+            &:nth-child(even) {
+              margin-bottom: 1rem;
+            }
+          }
+        }
       }
     }
   }
@@ -359,6 +369,7 @@ section#souvenir {
 section#items-main-visual {
   .inner-container {
     width: 70%;
+    max-width: 800px;
     margin: 0 auto;
     margin-top: 8rem;
     position: relative;
@@ -383,9 +394,9 @@ section#items-main-visual {
     }
   }
 }
-
 section#items {
-  margin: 7rem 0;
+  margin: 7rem auto;
+  max-width: 1200px;
   @include ribbon;
 
   p.description {
@@ -418,6 +429,107 @@ section#items {
 
       p {
         font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+section#access-main-visual {
+  .inner-container {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    position: relative;
+    z-index: -1;
+    @include md {
+      width: 80%;
+    }
+    @include sm {
+      width: 90%;
+      margin-top: 3rem;
+    }
+
+    .logo {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 18%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+section#access {
+  margin: 7rem 0;
+  @include ribbon;
+
+  .google-map {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 4rem 0 400px 0;
+    @include md {
+      width: 80%;
+    }
+    iframe {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      border: 0;
+    }
+  }
+
+  .access-car,
+  .access-train {
+    display: flex;
+    gap: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 80%;
+    @include sm {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  .access-car {
+    margin-top: 5rem;
+  }
+
+  .access-town-image {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 80%;
+    max-width: 800px;
+    @include md {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    p {
+      width: 50%;
+      padding: 0 5%;
+      @include md {
+        width: 100%;
+        order: 2;
+      }
+    }
+
+    .town-img {
+      width: 50%;
+      @include md {
+        order: 1;
       }
     }
   }

@@ -10,7 +10,7 @@ const Footer = () => {
             <table>
               <thead>
                 <tr>
-                  <th>甘味族</th>
+                  <th colSpan={2}>甘味族</th>
                 </tr>
               </thead>
               <tbody>
