@@ -3,8 +3,14 @@ import Link from "next/link";
 import Menubar from "../components/Menubar";
 import SeparatorMaterial from "../components/SeparatorMaterial";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const sectionList = document.querySelectorAll("section");
+    console.log(sectionList);
+  }, []);
+
   return (
     <>
       <Head>
