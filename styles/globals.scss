@@ -253,6 +253,13 @@ footer {
     }
   }
 }
+.view {
+  opacity: 1;
+  transition: all 0.5s;
+}
+section {
+  opacity: 0;
+}
 //
 //
 //
@@ -373,6 +380,11 @@ section#souvenir {
       width: 50%;
       text-align: center;
     }
+  }
+
+  .inner-container {
+    display: flex;
+    justify-content: center;
   }
 }
 //

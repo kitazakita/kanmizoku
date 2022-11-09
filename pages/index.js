@@ -8,7 +8,26 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     const sectionList = document.querySelectorAll("section");
-    console.log(sectionList);
+
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("view");
+        } else {
+          entry.target.classList.remove("view");
+        }
+      });
+    };
+    const ioOptions = {
+      root: null,
+      rootMargin: "0px 0px -30% 0px",
+    };
+
+    const io = new IntersectionObserver(callback, ioOptions);
+
+    sectionList.forEach((valu, i) => {
+      io.observe(valu);
+    });
   }, []);
 
   return (
@@ -83,7 +102,7 @@ const About = () => {
 
 const Craftsman = () => {
   return (
-    <section id="crafts-man" className="base-design-2colum">
+    <section id="crafts-man" className="base-design-2colum ">
       <div className="title">
         <h1>職人の手で一つ一つ</h1>
       </div>
@@ -187,11 +206,13 @@ const Souvenir = () => {
         詳しくは商品一覧ページとギャラリーページをご覧ください。
       </p>
 
-      <div className="link-btn">
-        <Link href="./items">商品一覧はこちら</Link>
-      </div>
-      <div className="link-btn">
-        <Link href="./gallery">ギャラリーはこちら</Link>
+      <div className="inner-container">
+        <div className="link-btn">
+          <Link href="./items">商品一覧はこちら</Link>
+        </div>
+        <div className="link-btn">
+          <Link href="./gallery">ギャラリーはこちら</Link>
+        </div>
       </div>
     </section>
   );

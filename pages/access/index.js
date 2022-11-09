@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Iframe from "react-iframe";
 import Head from "next/head";
 import Menubar from "../../components/Menubar";
 import Footer from "../../components/Footer";
 export default function Home() {
+  useEffect(() => {
+    const sectionList = document.querySelectorAll("section");
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("view");
+        } else {
+          entry.target.classList.remove("view");
+        }
+      });
+    };
+    const ioOptions = {
+      root: null,
+      rootMargin: "0px 0px -30% 0px",
+    };
+    const io = new IntersectionObserver(callback, ioOptions);
+    sectionList.forEach((valu, i) => {
+      io.observe(valu);
+    });
+  }, []);
   return (
     <>
       <Head>
