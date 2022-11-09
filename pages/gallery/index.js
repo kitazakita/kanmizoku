@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Menubar from "../../components/Menubar";
+import Footer from "../../components/Footer";
 export default function Home() {
   return (
     <>
@@ -10,15 +11,60 @@ export default function Home() {
       </Head>
       <Menubar />
       <MainVisual />
+      <Gallery />
+      <Footer />
     </>
   );
 }
 
 const MainVisual = () => {
   return (
-    <section id="main-visual">
-      <div className="logo">
-        <img src="./images/logo.png" alt="" />
+    <section id="gallery-main-visual">
+      <div className="inner-container">
+        <img src="./images/gallery-main-img.png" alt="" />
+        <div className="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Gallery = () => {
+  return (
+    <section id="gallery">
+      <div className="title">
+        <h1>公式ギャラリー</h1>
+      </div>
+
+      <div className="gallery-container">
+        <div className="gallery-img">
+          <img src="./images/gallery-01.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-02.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-03.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-04.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-05.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-06.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-07.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-08.png" alt="" />
+        </div>
+        <div className="gallery-img">
+          <img src="./images/gallery-09.png" alt="" />
+        </div>
       </div>
     </section>
   );

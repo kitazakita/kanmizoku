@@ -1,3 +1,5 @@
+import React from "react";
+import Iframe from "react-iframe";
 import Head from "next/head";
 import Menubar from "../../components/Menubar";
 import Footer from "../../components/Footer";
@@ -38,12 +40,13 @@ const Access = () => {
       </div>
 
       <div className="google-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53370.51402280487!2d131.3585672!3d33.27546759999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546ac2f5f729f87%3A0xfe31fae0fb807bd5!2z44CSODc5LTUxMDIg5aSn5YiG55yM55Sx5biD5biC5rmv5biD6Zmi55S65bed5LiK!5e0!3m2!1sja!2sjp!4v1667968881179!5m2!1sja!2sjp"
-          allowFullScreen=""
-          loading="lazy"
+        <Iframe
+          url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53370.51402280487!2d131.3585672!3d33.27546759999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546ac2f5f729f87%3A0xfe31fae0fb807bd5!2z44CSODc5LTUxMDIg5aSn5YiG55yM55Sx5biD5biC5rmv5biD6Zmi55S65bed5LiK!5e0!3m2!1sja!2sjp!4v1667968881179!5m2!1sja!2sjp"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+          loading="lazy"
+          width="100%"
+          height="100%"
+        />
       </div>
 
       <div className="access-car">
@@ -57,8 +60,8 @@ const Access = () => {
 
       <div className="access-town-image">
         <p>
-          テキストが入ります。テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。テキストが入ります。
+          〇〇駅の大通り沿いに店舗を構えております。
+          正面に見える〇〇山は、夏～秋にかけては綺麗な緑色と、冬には雪化粧をし、自然を感じることができます。
         </p>
 
         <div className="town-image">

@@ -58,13 +58,15 @@ const About = () => {
         <h1>甘味族とは</h1>
       </div>
 
-      <p className="description wrapper">
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
-      </p>
+      <div className="wrapper">
+        <p className="description ">
+          甘味族は代々続く和菓子作りの老舗でございます。
+          <br />
+          日本ならではの細工の細やかさ、季節を感じる彩りを与える一品を添えて。
+          <br />
+          お客様の日常にささやかな喜びを添え、心に通じる願いを込めて作っております。
+        </p>
+      </div>
 
       <div className="img">
         <img src="./images/karukan.png" alt="" />
@@ -82,8 +84,9 @@ const Craftsman = () => {
 
       <div className="inner-container wrapper">
         <p className="left-content">
-          テキストが入ります。テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。テキストが入ります。
+          伝統の技法を、ベテランの職人が日々創意工夫しながら、
+          「甘味族の味」として継承しています。厳選された素材と、
+          職人による技が一つになって美味しさを引き立てます。
         </p>
         <div className="right-content">
           <img src="./images/moti.png" alt="" />
@@ -106,8 +109,8 @@ const CuteJapaneseSweets = () => {
         </div>
 
         <p className="right-content">
-          テキストが入ります。テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。テキストが入ります。
+          一目見て楽しみ、食べて美味しいのが和菓子です。
+          その美観を損なわないよう、外観の隅々まで注意を払い美しく仕上げます。
         </p>
       </div>
       <div className="cute-japanese-sweets-innner wrapper mt-4rem">
@@ -116,8 +119,7 @@ const CuteJapaneseSweets = () => {
         </div>
 
         <p className="right-content">
-          テキストが入ります。テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。テキストが入ります。
+          日々変化していくニーズも取り入れ、甘味族の良さと両立できるよう心がけています。
         </p>
       </div>
     </section>
@@ -128,13 +130,13 @@ const KuriYoukan = () => {
   return (
     <section id="kuri-youkan" className="base-design-2colum">
       <div className="title">
-        <h1>職人の手で一つ一つ</h1>
+        <h1>当店の看板メニュー</h1>
       </div>
 
       <div className="inner-container wrapper">
         <p className="left-content">
-          テキストが入ります。テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。テキストが入ります。
+          こしあんと栗のペーストを使ってなめらかな口当たりに仕上げました。
+          栗をたっぷり入れて贅沢さを是非ご堪能下さい。
         </p>
         <div className="right-content">
           <img src="./images/kuri-youkan.png" alt="" />
@@ -152,9 +154,10 @@ const Souvenir = () => {
       </div>
 
       <p className="description">
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
+        甘味族はあんこを使った和菓子が主流ですが、
+        他にも様々な和菓子をお造りしております。
+        お土産にもピッタリな和菓子や、日常でお召し上がり頂ける和菓子まで
+        ございますので、ぜひご覧ください。
       </p>
 
       <div className="img-grid">
@@ -173,10 +176,17 @@ const Souvenir = () => {
       </div>
 
       <p className="description">
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。
+        他にも様々なメニューをご用意しております。
+        <br />
+        詳しくは商品一覧ページとギャラリーページをご覧ください。
       </p>
+
+      <div className="link-btn">
+        <Link href="./items">商品一覧はこちら</Link>
+      </div>
+      <div className="link-btn">
+        <Link href="./gallery">ギャラリーはこちら</Link>
+      </div>
     </section>
   );
 };
@@ -190,8 +200,8 @@ const EatIn = () => {
 
       <div className="inner-container wrapper">
         <p className="left-content">
-          テキストが入ります。テキストが入ります。テキストが入ります。
-          テキストが入ります。テキストが入ります。テキストが入ります。
+          当店はお持ち帰り以外にも、イートインスペースを設けております。
+          是非ご利用くださいませ。
         </p>
         <div className="right-content">
           <img src="./images/shop.png" alt="" />
