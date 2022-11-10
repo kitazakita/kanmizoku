@@ -173,19 +173,19 @@ const KuriYoukan = () => {
 
 const Souvenir = () => {
   return (
-    <section id="souvenir" className="wrapper">
+    <section id="souvenir">
       <div className="title">
         <h1>お土産にもピッタリ</h1>
       </div>
 
-      <p className="description">
+      <p className="description wrapper">
         甘味族はあんこを使った和菓子が主流ですが、
         他にも様々な和菓子をお造りしております。
         お土産にもピッタリな和菓子や、日常でお召し上がり頂ける和菓子まで
         ございますので、ぜひご覧ください。
       </p>
 
-      <div className="img-grid">
+      <div className="img-grid wrapper">
         <div className="img">
           <img src="./images/kuri-dorayaki.png" alt="" />
         </div>
@@ -200,7 +200,7 @@ const Souvenir = () => {
         </div>
       </div>
 
-      <p className="description">
+      <p className="description wrapper">
         他にも様々なメニューをご用意しております。
         <br />
         詳しくは商品一覧ページとギャラリーページをご覧ください。

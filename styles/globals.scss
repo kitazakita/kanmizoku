@@ -30,8 +30,7 @@ p {
   padding: 0.7rem 2rem;
   background-color: $darkGreen;
   border-radius: 5px;
-  margin-top: 2rem;
-  margin-right: 2rem;
+  margin-top: 1rem;
 }
 .menu-bar {
   z-index: 10;
@@ -388,8 +387,11 @@ section#souvenir {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    text-align: center;
     @include md {
       flex-direction: column;
+      gap: 0;
     }
   }
 }
