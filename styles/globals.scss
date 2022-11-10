@@ -534,8 +534,7 @@ section#access {
   .access-town-image {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 10rem;
+    margin: 5rem auto;
     width: 80%;
     max-width: 800px;
     @include md {
