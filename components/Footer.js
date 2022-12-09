@@ -1,9 +1,26 @@
+import { useState } from 'react';
+
 const Footer = () => {
+  const [display, setDisplay] = useState(true);
+
   return (
     <footer>
       <div className='alert'>
-        <p>当サイトは制作実績用のデモページです。</p>
-        <p>実際には存在致しません。</p>
+        {display ? (
+          <div>
+            <p>当サイトは制作実績用のデモページです。</p>
+            <p>実際には存在致しません。</p>
+          </div>
+        ) : (
+          ''
+        )}
+        <button
+          onClick={() => {
+            setDisplay((prev) => !prev);
+          }}
+        >
+          {display ? '閉じる' : '開く'}
+        </button>
       </div>
 
       <div className='footer-wrapper'>
