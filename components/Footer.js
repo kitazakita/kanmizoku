@@ -1,12 +1,17 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-wrapper">
-        <div className="inner-container">
-          <div className="logo">
-            <img src="./images/logo.png" alt="" />
+      <div className='alert'>
+        <p>当サイトは制作実績用のデモページです。</p>
+        <p>実際には存在致しません。</p>
+      </div>
+
+      <div className='footer-wrapper'>
+        <div className='inner-container'>
+          <div className='logo'>
+            <img src='./images/logo.png' alt='' />
           </div>
-          <div className="corporate-table">
+          <div className='corporate-table'>
             <table>
               <thead>
                 <tr>

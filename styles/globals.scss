@@ -1,4 +1,4 @@
-@use "./mixin" as *;
+@use './mixin' as *;
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
   color: $black;
 }
 body {
-  font-family: "Yomogi", cursive;
+  font-family: 'Yomogi', cursive;
   background-color: $beige;
 }
 a {
@@ -17,7 +17,7 @@ img {
   vertical-align: bottom;
 }
 p {
-  font-family: "Shippori Mincho", serif;
+  font-family: 'Shippori Mincho', serif;
   line-height: 2;
 }
 .wrapper {
@@ -46,6 +46,7 @@ p {
   align-items: flex-end;
   gap: 0.5rem;
   padding-top: 0.5rem;
+  box-shadow: 1px 1px 4px 0px black;
   @include sm {
     top: auto;
     bottom: 1rem;
@@ -67,6 +68,7 @@ p {
     align-items: center;
     cursor: pointer;
     padding: 0.2rem 1rem;
+    caret-color: transparent;
 
     .menu-box {
       width: 30px;
@@ -191,7 +193,7 @@ p {
   overflow: hidden;
   z-index: -1;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: -50%;
@@ -212,6 +214,7 @@ p {
   }
 }
 footer {
+  background-color: $lightGreen;
   .footer-wrapper {
     width: 70%;
     margin: 0 auto;
@@ -219,7 +222,6 @@ footer {
       width: 80%;
     }
   }
-  background-color: $lightGreen;
 
   .inner-container {
     display: flex;
@@ -234,7 +236,7 @@ footer {
     }
     .corporate-table {
       table {
-        font-family: "Shippori Mincho", serif;
+        font-family: 'Shippori Mincho', serif;
         border-spacing: 3rem 5px;
         margin: 0 auto;
         th {
@@ -253,6 +255,24 @@ footer {
     }
   }
 }
+
+footer .alert {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  background-color: rgb(253, 237, 237);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 4px 0px black;
+  p {
+    line-height: 1.43;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(95, 33, 32);
+    font-family: serif;
+  }
+}
+
 .view {
   opacity: 1;
   transition: all 0.5s;
